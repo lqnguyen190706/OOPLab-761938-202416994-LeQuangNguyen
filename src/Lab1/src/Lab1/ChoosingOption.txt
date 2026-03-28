@@ -1,0 +1,19 @@
+Câu 1: Điều gì xảy ra nếu người dùng chọn “Cancel”?
+
+Khi người dùng chọn Cancel, chương trình sẽ trả về giá trị là 2.
+Giá trị này tương ứng với hằng số JOptionPane.CANCEL_OPTION.
+
+Nếu chọn Yes → trả về 0
+Nếu chọn No → trả về 1
+Nếu đóng cửa sổ → trả về -1
+
+Câu 2: Làm thế nào để tùy chỉnh các lựa chọn cho người dùng?
+Để tùy chỉnh các lựa chọn, có thể sử dụng các cách sau:
+
+Nếu chỉ muốn hiển thị 2 lựa chọn Yes/No, ta dùng:
+JOptionPane.YES_NO_OPTION
+Nếu muốn thay đổi nội dung nút (ví dụ: “I do” và “I don’t”), ta dùng phương thức showOptionDialog() và truyền vào một mảng chứa các lựa chọn mong muốn.
+
+Ví dụ:
+String[] options = {"I do", "I don't"};
+Cách này giúp chương trình linh hoạt hơn và phù hợp với yêu cầu của người dùng.
