@@ -1,3 +1,5 @@
+package Lab1.src.Lab1;
+
 public class FirstDialog {
     import javax.swing.JOptionPane;
 

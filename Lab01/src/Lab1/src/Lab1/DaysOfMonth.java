@@ -1,3 +1,5 @@
+package Lab1.src.Lab1;
+
 import java.util.Scanner;
 
 public class DaysOfMonth {
