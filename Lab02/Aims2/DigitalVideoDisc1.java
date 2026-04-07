@@ -7,7 +7,8 @@ public class DigitalVideoDisc1 {
     private int length;
     private float cost;
 
-    // Constructor đầy đủ
+
+
     public DigitalVideoDisc1(String title, String category, String director, int length, float cost) {
         this.title = title;
         this.category = category;
@@ -15,8 +16,12 @@ public class DigitalVideoDisc1 {
         this.length = length;
         this.cost = cost;
     }
+    public DigitalVideoDisc(String title) {
+        this.title = title;
+        nbDigitalVideoDiscs++;
+        this.id = nbDigitalVideoDiscs;
+    }
 
-    // Constructor ngắn
     public DigitalVideoDisc1(String title, String category, float cost) {
         this.title = title;
         this.category = category;
