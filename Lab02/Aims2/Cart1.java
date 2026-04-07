@@ -8,6 +8,22 @@ public class Cart1 {
 
     // Thêm DVD
     public void addDigitalVideoDisc(DigitalVideoDisc1 disc) {
+        public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+            addDigitalVideoDisc(dvd1);
+            addDigitalVideoDisc(dvd2);
+        }
+
+        public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+            for (DigitalVideoDisc dvd : dvdList) {
+                addDigitalVideoDisc(dvd);
+            }
+        }
+
+        public void addDigitalVideoDisc(DigitalVideoDisc... dvdList) {
+            for (DigitalVideoDisc dvd : dvdList) {
+                addDigitalVideoDisc(dvd);
+            }
+        }
         if (qtyOrdered < MAX_NUMBERS_ORDERED) {
             itemsOrdered[qtyOrdered] = disc;
             qtyOrdered++;
