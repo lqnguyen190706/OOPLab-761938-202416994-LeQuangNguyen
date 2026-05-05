@@ -5,7 +5,7 @@ public class Aims {
 
         Cart cart = new Cart();
 
-        // Tạo DVD
+
         DigitalVideoDisc dvd1 =
                 new DigitalVideoDisc("Lion King", "Animation", "Roger", 87, 19.95f);
 
@@ -15,14 +15,14 @@ public class Aims {
         DigitalVideoDisc dvd3 =
                 new DigitalVideoDisc("Aladin", "Animation", 18.99f);
 
-        // 🔹 MỤC 12: Thêm vào cart
+
         cart.addDigitalVideoDisc(dvd1);
         cart.addDigitalVideoDisc(dvd2);
         cart.addDigitalVideoDisc(dvd3);
 
         cart.printCart();
 
-        // 🔹 MỤC 13: Xóa
+
         cart.removeDigitalVideoDisc(dvd2);
 
         cart.printCart();
