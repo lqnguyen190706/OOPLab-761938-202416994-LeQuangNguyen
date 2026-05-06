@@ -1,0 +1,3 @@
+Khi gọi swap(jungleDVD, cinderellaDVD), tiêu đề (title) không thay đổi vì phương thức chỉ hoán đổi bản sao của các tham chiếu (reference), chứ không hoán đổi đối tượng thật sự. Do đó, các đối tượng gốc vẫn giữ nguyên.
+
+Khi gọi changeTitle(jungleDVD, cinderellaDVD.getTitle()), tiêu đề của jungleDVD bị thay đổi vì bản sao tham chiếu vẫn trỏ đến cùng một đối tượng. Việc thay đổi thuộc tính của đối tượng thông qua tham chiếu này sẽ ảnh hưởng trực tiếp đến đối tượng gốc.
