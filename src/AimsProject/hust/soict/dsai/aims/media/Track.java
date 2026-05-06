@@ -1,8 +1,6 @@
+package AimsProject.hust.soict.dsai.aims.media;
 
-package hust.soict.dsai.aims.media;
-
-public class Track {
-
+public class Track implements Playable {
     private String title;
     private int length;
 
@@ -19,11 +17,18 @@ public class Track {
         return length;
     }
 
+    @Override
     public void play() {
-        if (length <= 0) {
-            System.out.println("Track cannot be played: " + title);
-        } else {
-            System.out.println("Playing track: " + title + " (" + length + ")");
+        System.out.println("Playing track: " + title);
+        System.out.println("Track length: " + length);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj instanceof Track) {
+            Track other = (Track) obj;
+            return this.title.equals(other.title) && this.length == other.length;
         }
+        return false;
     }
 }

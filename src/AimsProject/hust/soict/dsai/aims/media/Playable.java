@@ -1,4 +1,5 @@
 package AimsProject.hust.soict.dsai.aims.media;
 
-public class Playable {
+public interface Playable {
+    void play();
 }
